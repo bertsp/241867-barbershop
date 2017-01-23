@@ -8,7 +8,7 @@
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <a href="index-html"><img src="img/logo.png" width="" height=""  alt="Barbershop"></a>
+          <a href="index-html"><img src="img/logo.png" width="111" height="24"  alt="Barbershop"></a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -22,7 +22,7 @@
               <a href="#">Прайс-лист</a>
             </li>  
             <li>
-              <a href="#" class="active">Магазин</a>
+              <a class="main-navigation-active">Магазин</a>
             </li>  
             <li>
               <a href="#">Контакты</a>
@@ -35,31 +35,37 @@
       </div>
     </header>
 
-    <main class="container">
+    <main class="container inner-content">
       <section class="catalog-item">
         <h1>Набор для путешествий «Baxter of California»</h1>
         <div class="breadcrumbs">
-          <a href="index.html">Главная</a>
-          <a href="catalog/html">Магазин</a>
-          <a href="catalog.html">Средства для ухода</a>
-          <span>Набор для путешествий «Baxter of California»</span>
+          <a href="index.html" class="breadcrumbs-page">Главная</a>
+          <a href="catalog/html" class="breadcrumbs-page">Магазин</a>
+          <a href="catalog.html" class="breadcrumbs-page">Средства для ухода</a>
+          <span class="breadcrumbs-page">Набор для путешествий «Baxter of California»</span>
         </div>
-        <div class="catalog-item-left">
-          <img src="baxter-1.png" width="" height="" alt="Набор для путешествий «Baxter of California»">
-          <img src="baxter-2.png" width="" height="" alt="Набор для путешествий «Baxter of California»">
-          <img src="baxter-3.png" width="" height="" alt="Набор для путешествий «Baxter of California»">
-          <img src="baxter-4.png" width="" height="" alt="Набор для путешествий «Baxter of California»">          
+        <div class="left-column">
+          <img src="baxter-1.png" width="460" height="498" alt="Набор для путешествий «Baxter of California»">
+          <div class="baxter-image-small">
+            <a href="#"><img src="baxter-2.png" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></a>
+            <a href="#"><img src="baxter-3.png" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></a>
+            <a href="#"><img src="baxter-4.png" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></a>
+          </div>
         </div>
-        <div class="catalog-item-right">
-          <div class="available">Есть в наличии</div>
-          <div class="article">Артикул: Dexter-AE</div>  
-          <p> Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+        <div class="right-column">
+          <span class="baxter-available">Есть в наличии</span>
+          <span class="baxter-article">Артикул: Dexter-AE</span>
+          <p> Travel Kit - необходимый аксессуар во время любого путешествия.
+            В аккуратной кожаной сумке находится все, что нужно для бритья и
+            ухода за кожей во время рабочей поездки или отдыха: средство для
+            умывания, увлажняющий крем, крем для бритья, крем после бритья,
+            шампунь. Набор также может стать отличным подарком.</p>
           <div class="price-and-btn">
-            <span>2 900 руб.</span>
+            <span class="price">2 900 руб.</span>
             <a href="#">Купить</a>
           </div>
           <h2>В набор входят:</h2>  
-          <ul>
+          <ul class="baxter-items">
             <li>Средство для умывания (50 мл)</li>
             <li>Увлажняющий крем (50 мл)</li>
             <li>Крем для бритья (50 мл)</li>
@@ -91,9 +97,9 @@
       </div>
     </footer>
 
-    <div class="log-in-form">
-      <form action="" method="post"> 
-        <h1>Личный кабинет</h1>
+    <div class="popup-log-in-form">
+      <form action="echo.htmlacademy.ru" method="post"> 
+        <h2>Личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
         <label for="login"></label>
         <input type="text" name="login" id="login" placeholder="Логин">
@@ -108,4 +114,3 @@
 
   </body>
 </html>
-
