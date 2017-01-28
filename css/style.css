@@ -1,9 +1,12 @@
 body {
+	margin: 0;
+	padding: 0;
 	font-size: 14px;
 	line-height: 18px;
 	color: #000000;
 	font-weight: normal;
     font-family: "PTSans", "Arial", sans-serif;
+    background-image: url("img/barbershop-shop.jpg");
 }
 
 h1 {
@@ -15,3 +18,315 @@ h2 {
 	font-size: 24px;
 	line-height: 30px;
 }
+
+.main-header {
+	margin-bottom: 50px;
+}
+
+.container {
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 140px;
+	height: 24px;
+	float: left;
+	margin-right: 20px;
+}
+
+.main-navigation {
+	min-height: 70px;
+	width: 620px;
+	float: left;
+
+}
+
+.user-block {
+	min-height: 70px;
+	width: 140px;
+	float: right;
+
+}
+
+.clearfix {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.inner-content h1 {	
+	margin-top: 0;
+	margin-bottom: 21px;
+
+}
+
+.inner-content .breadcrumbs {
+	min-height: 11px;
+	margin-bottom: 55px;
+}
+
+.inner-content .filter {
+	width: 220px;
+	min-height: 569px;
+	float: left;	
+}
+
+.inner-content .filter-block:first-child {
+	min-height: 258px;
+	margin-bottom: 52px;
+}
+
+.inner-content filter-block:last-child {
+	min-height: 165px;
+} 
+
+.inner-content .catalog {
+	width: 700px;
+	min-height: 590px;
+	float: right;
+	margin-bottom: 45px;
+	font-size: 0;
+}
+
+.catalog article {
+	width: 220px;
+	height: 286px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+  
+}
+
+.catalog article:nth-child(3n) {
+	margin-right: 0;
+	
+}
+
+.catalog article:nth-child(n+4) {
+	margin-bottom: 0;
+	
+}
+
+
+.paginator {
+	width: 193px;
+	height: 43px;
+	clear: both;
+	margin-left: 240px;
+	margin-bottom: 49px;
+}
+
+.main-footer {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	min-height: 85px;
+}
+
+.footer-contacts {
+	width: 320px;
+	float: left;
+	min-height: 90px;
+	margin-right: 80px;
+
+}
+
+.footer-social {
+	width: 140px;
+	float: left;
+	min-height: 90px;
+}
+
+.footer-copyright {
+	width: 140px;
+	float: right;
+	min-height: 90px;
+}
+
+.left-column {
+	width: 460px;
+	float: left;	
+}
+
+.right-column {
+	width: 400px;
+	float: right;
+	padding-top: 21px;
+}
+
+.left-column>img {
+	margin-bottom: 21px;
+}
+
+.baxter-image-small {
+	font-size: 0px;
+	margin-bottom: 49px;
+}
+
+.baxter-image-small a {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+
+}
+
+.baxter-image-small a:last-child {
+	margin-right: 0px;
+}
+
+.right-column p {
+	margin-top: 33px;
+	margin-bottom: 43px;
+	min-height: 130px;
+}
+
+.price-and-btn {
+	min-height: 43px;
+	margin-bottom: 65px;
+
+}
+
+.right-column h2 {
+	margin-bottom: 33px;
+}
+
+.baxter-items {
+	min-height: 106px;
+}
+
+
+
+
+
+
+/*Обводка*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.container::before {
+  content: ".container";
+}
+
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
+}
+
+.main-navigation::before {
+	content:".main-navigation";
+}
+
+.user-block::before {
+	content:".user-block";
+}
+
+
+.inner-content h1::before {
+	content:".inner-content h1";
+}
+
+.breadcrumbs::before {
+	content:".breadcrumbs";
+}
+
+.inner-content form::before {
+	content:".inner-content form";
+}
+
+.inner-content .catalog::before {
+	content: "inner-content .catalog";
+}
+
+ .paginator::before {
+	content: ".paginator";
+}
+
+ .main-footer::before {
+	content: ".main-footer";
+}
+
+ .footer-contacts::before {
+	content: ".footer-contacts";
+}
+
+ .footer-social::before {
+	content: ".footer-social";
+}
+
+ .footer-copyright::before {
+	content: ".footer-copyright";
+}
+
+body > * > * > * {
+	background: rgba(255, 255, 000, 0.2);
+	outline: 3px solid yellow;
+}
+
