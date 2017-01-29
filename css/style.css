@@ -68,23 +68,16 @@ h2 {
 }
 
 .inner-content .filter {
-	width: 220px;
-	min-height: 569px;
+	width: 220px;	
 	float: left;	
 }
 
 .inner-content .filter-block:first-child {
-	min-height: 258px;
 	margin-bottom: 52px;
 }
 
-.inner-content filter-block:last-child {
-	min-height: 165px;
-} 
-
 .inner-content .catalog {
 	width: 700px;
-	min-height: 590px;
 	float: right;
 	margin-bottom: 45px;
 	font-size: 0;
@@ -92,7 +85,7 @@ h2 {
 
 .catalog article {
 	width: 220px;
-	height: 286px;
+	min-height: 286px;
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 20px;
@@ -105,12 +98,6 @@ h2 {
 	margin-right: 0;
 	
 }
-
-.catalog article:nth-child(n+4) {
-	margin-bottom: 0;
-	
-}
-
 
 .paginator {
 	width: 193px;
