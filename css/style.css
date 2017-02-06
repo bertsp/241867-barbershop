@@ -193,10 +193,11 @@ body {
 	display: none;
 }
 
-input[type="checkbox"]:checked ~ label::before {
+input[type="checkbox"]:checked + label::before {
 	width: 16px;
 	height: 16px;
-	border: 2px solid red;
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -13px -59px;
 }
 
 .radio label::before {
@@ -205,10 +206,15 @@ input[type="checkbox"]:checked ~ label::before {
     top: 0;
     left: -43px;
     z-index: 1;
-    width: 16px;
-    height: 16px;
+    width: 8px;
+    height: 8px;
 		border-radius: 50%;
-    border: 2px solid #000000;
+    border: 5px solid #ffffff;
+		box-shadow: 0 0 0 2px #000000;
+}
+
+input[type="radio"]:checked + label::before {
+    background: #000000;
 }
 
 
@@ -504,9 +510,7 @@ input[type="submit"] {
 
 /*Обводка*/
 
-body {
-  padding: 3px;
-}
+
 
 body > *,
 body > * > *,

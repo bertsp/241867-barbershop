@@ -63,15 +63,12 @@
         </div>
         <div class="filter-block radio">
           <h2>Группы товаров:</h2>
-          <label>
-            <input type="radio" name="product-groups" value="Бритвенные принадлежности"> Бритвенные принадлежности
-          </label>
-          <label>
-            <input type="radio" name="product-groups" value="Средства для ухода" checked> Средства для ухода
-          </label>
-          <label>
-            <input type="radio" name="product-groups" value="Аксессуары"> Аксессуары
-          </label>
+          <input type="radio" name="product-groups" value="Бритвенные принадлежности" id="razor">
+          <label for="razor">Бритвенные принадлежности</label>
+          <input type="radio" name="product-groups" value="Средства для ухода" id="care" checked>
+          <label for="care">Средства для ухода</label>
+          <input type="radio" name="product-groups" value="Аксессуары" id="accessories">
+          <label for="accessories">Аксессуары</label>
         </div>
         <input type="submit" value="Показать" class="btn">
       </form>
