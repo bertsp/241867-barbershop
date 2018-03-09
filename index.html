@@ -3,10 +3,130 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+	<header class="main-header">
+		<div class="container"><!-- блок отвечающий за центровку содержимого -->
+			<nav class="main-menu"><!-- главная навигация сайта -->
+				<ul>
+					<li>
+						<a href="#">ИНФОРМАЦИЯ</a>
+					</li>
+					<li>
+						<a href="#">НОВОСТИ</a>
+					</li>
+					<li>
+						<a href="#">ПРАЙС-ЛИСТ</a>
+					</li>
+					<li>
+						<a href="#">МАГАЗИН</a>
+					</li>
+					<li>
+						<a href="#">КОНТАКТЫ</a>
+					</li>
+				</ul>	
+			</nav>
+			<div class="user-block"><!-- блок входа пользователя -->
+				<a class="login" href="#">ВХОД</a>		
+			</div>
+		</div>
+	</header>
+	<main class="container"><!-- блок отвечающий за центровку содержимого -->
+		<div class="index-logo"><!-- блок отвечающий за центровку изображения логотипа -->
+			<img src="img/index-logo.png" width="368" height="204" alt="Барбершоп Бородинский"><!-- изображения логотипа-->
+		</div>	
+		<section class="features"><!-- Смысловой раздел содержащий преимущества -->
+			<div class="features-item"><!-- Первое преимущество -->
+				<b class="features-name">Быстро</b>
+				<p>Мы делаем свою работу быстро! Два часа пролетают незаметно и вы - обладатель стильной стрижки-минутка.</p>
+			</div>
+			<div class="features-item"><!-- Второе преимущество -->
+				<b class="features-name">Круто</b>
+				<p>Забудьте как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+			</div>
+			<div class="features-item"><!-- Третье преимущество -->
+				<b class="features-name">Дорого</b>
+				<p>Наши мастера-профессионалы своего дела и не могут стоить дешевле. К тому же, разве цена не дает определенный статус!</p>
+			</div>			
+		</section>
+		<div class="index-content"><!-- белый блок содержащий внутри себя SECTION, но сам он является декоративным -->
+			<div class="index-content-left"><!-- невидимый блок делающий левую колонку -->
+				<h2 class="index-content-title">Новости</h2><!-- название колонок, не H1 так как это не такой значимый заголовок -->
+				<ul class="news-preview"><!-- список новостей -->
+					<li>
+						<p>Нам наконец завезли Ягермастер! Так что вы можете пропустить стаканчик во время стрижки!</p><!-- содержание новости -->
+						<time datetime="2018-03-09">9 марта</time><!-- Время добавления новости -->
+					</li>
+					<li>
+						<p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества
+						 титулов и наград. пополнил наши стройные ряды!</p><!-- содержание новости -->
+						<time datetime="2018-03-09">10 марта</time><!-- Время добавления новости -->
+					</li>
+				</ul>
+				<a class="btn" href="#">Все новости</a><!-- Ссылка на список всех новостей в архиве -->
+			</div>
+			<div class="index-content-right"><!-- название колонок, не H1 так как это не такой значимый заголовок -->
+				<h2 class="index-content-title">Фотогалерея</h2>
+				<div class="gallery">
+					<figure class="gallery-content"><!-- Блок содержательных картинок -->
+						<img src="img/photo-1.jpg" width="286" height="164" alt="">
+					</figure>
+					<button class="btn gallery-prev">Назад</button>
+					<button class="btn gallery-next">Вперед</button>
+				</div>
+			</div>	
+		</div>
+		<div class="index-content"><!-- белый блок содержащий внутри себя SECTION, но сам он является декоративным -->
+			<div class="index-content-left"><!-- невидимый блок делающий левую колонку -->
+				<h2 class="index-content-title">Контактная инвормация</h2><!-- название колонок, не H1 так как это не такой значимый заголовок -->
+				<p>
+					Барбершоп "Бородинский"<br>
+					Адрес: г.Переславль-Залесский ул. Ростовская д.12<br>
+					Телефон: +7(999)9999
+				</p>
+				<p>
+					Время работы:<br>
+					пн-пт: c 8:00 до 20:00<br>
+					сб-вс: с 9:00 до 17:00
+				</p>
+				<a class="btn" href="#">Как проехать</a>
+				<a href="btn" href="#">Обратная связь</a>				
+			</div>
+			<div class="index-content-right"><!-- название колонок, не H1 так как это не такой значимый заголовок -->
+				<h2 class="index-content-title">Записаться</h2>	
+				<p>
+					Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+				</p>	
+				<form class="appointment-form" action="https://bertsp.ru" method="post">
+					<input type="text" name="date" placeholder="Дата">
+					<input type="text" name="time" placeholder="Время">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="tel" name="phone" placeholder="Телефон">
+					<button class="btn" type="submit">Отправить</button>					
+				</form>				
+			</div>	
+		</div>		
+	</main>
+	<footer class="main-footer"><!-- разметка подвала, внутри 3 смысловых блока -->
+		<div class="container">
+			<section class="footer-contacts">
+				Барбершоп "Бородинский"<br>
+				Адрес: г.Переславль-Залесский ул. Ростовская д.12<br>
+				<a href="#">Как нас найти?</a>
+				Телефон: +7(999)9999
+			</section>
+			<section class="footer-social">
+				<a class="social-btn social-btn-vk" href="#">Вконтакте</a><!-- каждой ссылке дано два класса общий для одинакового оформления и разные для различных иконок -->
+				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				
+			</section>
+			<section class="footer-copyright">
+				<p>Разработано:</p>
+				<a class="btn" href="#">Сергей Бертенев</a>
+			</section>
+		</div>	
+	</footer>
   </body>
 </html>
