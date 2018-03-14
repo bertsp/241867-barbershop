@@ -1,0 +1,39 @@
+.main-header{
+	min-height:70px;
+	background: rgb(18,133,34,0.2);
+}
+
+.container{
+	width:940px;
+	margin:0 auto;
+	margin-bottom: 56px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: rgb(136,113,32,0.4);
+}
+
+.main-menu{
+	width: 780px;
+	float: left;
+	background: rgb(233,21,21,0.6);
+}
+
+.user-block{
+	width: 140px;
+	float:right;
+	background: rgb(233,21,21,0.6);
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.index-logo{
+	width:368px;
+	height:204px;
+	margin:0 auto;
+	margin-bottom:30px;
+	background: rgb(233,21,21,0.6);
+}
